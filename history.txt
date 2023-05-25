@@ -1,0 +1,831 @@
+10
+sudo apt update
+sudo apt install mc
+mc
+mc
+sudo apt install openssh-server 
+clear
+exit
+ip a
+systemctl status ssh
+mc
+sudo apt update
+sudo install gcc make perl
+sudo apt install gcc make perl
+sudo reboot
+sudo usermod -aG vboxsf mels
+ssh
+sudo service ssh status
+sudo ufw allow ssh
+sudo lsof -i:22
+ip -c a
+mc
+cmatrix -S
+cmatrix -s
+cmatrix -r
+cmatrix -m
+cmatrix -f
+cmatrix -help
+cmatrix -a
+cmatrix -b
+cmatrix -B
+cmatrix -c
+cmatrix -l
+cmatrix -L
+sudo apt install screenfetch
+screenfetch
+mc
+cd /home
+sudo su
+cd /
+cd /home
+cd ~
+cd /
+cd ~
+ls -al
+ls -l
+ls -a
+ls -al
+cd/proc
+cd /proc
+ls -al
+cat cpuinfo
+cat version
+cd /dev
+ls -al
+cd /run
+ls -al
+ls
+ls -al
+ls -a -l
+ls --help
+ls -an
+ls -al
+man ls
+pwd
+pwd -help
+pwd --help
+pwd -P
+pwd -L
+cd
+mkdir test
+ls -al
+cd /test
+cd test/
+mkdir -p 1/2/3/4/5
+cd
+ls -al
+cd test
+cd 1
+cd 2
+cd 3
+cd 4
+cd 5
+ll
+cd
+cd /test
+cd test/
+ll
+cat > testfile
+ll
+cp testfile 
+cp testfile test2
+ll
+cat test2
+cmatrix
+sudo apt install cmatrix
+cmatrix
+cmatrix -s
+�cd
+cd/
+cd /
+cd ~
+cp test -r test2
+ll
+mv test test3
+cd test2
+ll
+rm test2
+ll
+rm -rf test2
+ll
+cd
+rm -rf test2
+ll
+rm -rf  /home/mels/test
+rm -rf  /home/mels/test3
+ll
+mkdr
+mkdir
+mkdir test
+cd test
+touch testtch
+touch testtch2
+cat > testfile
+cat > testfile2
+cat testfile testfile2
+ll
+cat test_all
+cat testfile testfile2 > test_all
+cat test_all
+cmatrix -help
+cmatrix -o
+cmatrix -h
+cmatrix -n
+cmatrix -S
+cmatrix -s
+cmatrix -x
+V
+cmatrix -V
+cmatrix -u10
+cmatrix -u 10
+cmatrix -u 1
+cmatrix -c red
+cmatrix -c blue
+cmatrix -C red
+cmatrix -C yelow
+cmatrix -C magenta
+ip --help
+ip -rc
+ip -d
+ip -f
+ip sr -l
+ip sr -o
+ip sr -c
+ip sr 
+cd /
+cd /home/mels
+cd /
+cd home
+cd mels
+cd //
+cd ..
+cd ~
+cd ..
+cd .
+cd ..
+cd ~
+cd ~~
+cd ~
+ll
+cd .
+pwd
+cd ~
+ll
+cd test
+ll
+ln test_all test_ln
+ll
+ls -ali
+cat >> test_ln
+ll
+car test
+car test_ln
+cat test_ln
+cat >> test_ln
+cat test_ln
+cat ..
+cat .
+ll
+ln -s testtch test_ln
+ln -s testtch test_lns
+ll
+ln -s /home/mels/test/test_all  test_lns
+ln -s /home/mels/test/test_all  test_lnsabs
+ll
+ms test_lnsabs ..
+cd ~
+ll
+cd test
+ll
+mv test_lnsabs ..
+cd ..
+ll
+ln -s test test_ln
+ll
+sudo apt install vim
+cd test
+ll
+vim test_all
+cat test_all
+vim test_all
+mkdir homework
+l
+cd ~
+mkdir homework
+cd homework
+cat > cat
+cat > human
+cat cat human > cat_human
+ll
+cat cat_human
+rename cat_human
+sudo apt install rename
+mv -v «cat_human» «human_cat»
+ll
+mv -v cat_human human_cat
+ll
+cat > dog
+cat > fox
+cat > pig
+mkdir new_dir
+mv pig new_dir
+cd new_dir
+ll
+cd ..
+rm /home/mels/homework/*
+rm -r /home/mels/homework/*
+cat > file1
+cp file1 file2
+cat file2
+ln file1 file 3
+ln file1 file3
+ll
+cat file3
+rm  /home/mels/homework/file1
+ll
+cat file3
+cat file2
+cat fil4
+ln file1 file4
+ln file3 file4
+rm  /home/mels/homework/file3
+дд
+ll
+cat file4
+mv -v file2 program2
+mv -v fil4 program4
+ln -s program2 program5
+ll
+шв
+id
+ip
+ip adress
+ip address
+id
+sudo apt update
+apt update
+sudo apt update
+apt search nginx
+apt list nginx
+apt instal nginx
+apt install nginx
+sudo apt install nginx
+apt remove nginx
+sudo apt remove nginx
+sudo apt autoremove
+sudo apt install nginx
+sudo apt purge nginx
+cd /etc/nginx
+ll
+sudo apt autoremove
+ll
+sudo apt purge [200~libflashrom1 libftdi1-2 libllvm13 libnginx-mod-http-geoip2 libnginx-mod-httpge-filter
+sudo apt autoremove
+cat/etc/password
+cat /etc/passwd
+cat /etc/group
+cat /etc/shadow
+sudo cat /etc/shadow
+sudo useradd -s /bin/bash -m -d /home/testuser testuser
+cat /etc/passwd
+tail /etc/pswd
+tail /etc/passwd
+sudo adduser testuser2
+sudo cat /etc/shadow
+sudo passwd testuser
+sudo ls -al /home/testuser
+sudo ls -al /etc/skel
+sudo usermod -aG adm testuser
+id 
+sudo id testuser
+sudo usermod -a www-data testuser
+sudo usermod -g www-data testuser
+sudo id testuser
+man usermod
+sudo userdel testuser2
+sudo passwd testuser
+sudo cat /etc/shadow
+sudo chage testuser
+sudo groupadd testgroup
+sudo groupdel testgroup
+su testuser
+sudo su
+sudo visudo
+cd test
+ll
+sudo chown testfile testuer:www-data
+sudo chown testuer:www-data testfile
+sudo chown testuser:www-data testfile
+ll
+cat > filename.txt
+ls -al
+id
+ll
+testfile
+cat testfile2
+nano testfile2
+nano testfile
+sudo nano testfile2
+sudo chmod u=rwx,g=rw,o=rx testfile
+ll
+sudo chmod 664 testfile2
+ll
+sudo chmod 700 testfile2
+ll
+useradd testuser2
+sudo useradd -s /bin/bash -m -d /home/testuser2 testuser2
+sudo useradd -s /bin/bash -m -d /home/test test
+sudo userdel test
+sudo userdel test2
+groupadd gbGroup
+sudo groupadd gbGroup
+groupdel gbGroup
+sudo groupdel gbGroup
+wget https://download.virtualbox.org/virtualbox/7.0.6/virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb
+ll
+dpkg -i virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb 
+sudo dpkg -i virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb 
+apt -f install
+sudo apt -f install
+su sudo
+sudo su
+crontab -l
+crontab -e
+crontab -l
+crontab -e
+crontab -l
+sudo dpkg -i /PATH/version-specific-package-name.de
+sudo dpkg -i mysql-apt-config_w.x.y-z_all.deb
+wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmor --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg
+sudo apt-get install virtualbox-6.1
+sudo add-apt-repository ppa:nameppa/ppa
+sudo add-apt-repository ppa:dr-akulavich/lighttable
+sudo apt update
+sudo apt-get install lighttable-installer
+sudo apt remove add-apt-repository ppa:dr-akulavich/lighttable
+crontab -e
+crontab -l
+cd ..
+crontab -e
+crontab -l
+crontab -r
+crontab -e
+wget [200~https://download.virtualbox.org/virtualbox/7.0.6/virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb~
+/home
+cd home
+cd Home
+clr
+clear
+mkdir
+mkdir Игрушки для школьников
+mkdir Игрушки для дошколят
+mkdir Игрушки_для_школьников
+mkdir Игрушки_для_дошколят
+cd Игрушки_для_школьников
+cat > Роботы
+cat > Конструкторы
+cd .
+cd ..
+cd Игрушки_для_дошколят
+cat > Куклы
+cd ..
+mkdir Имя_Игрушки
+mv Игрушки_для_школьников Имя Игрушки
+mv Игрушки_для_школьников Имя_Игрушки
+mv Игрушки_для_дошколят Имя_Игрушки
+mv Игрушки_для_школьников Имя_Игрушки
+cd Игрушки_для_дошколят
+cd Игрушки_для_школьников
+cd Имя_Игрушки
+list
+ls
+cd ..
+mkdir Игрушки_для_школьников
+mkdir Игрушки для дошколят
+mkdir Игрушки_для_дошколят
+mv Игрушки_для_дошколят Имя_Игрушки
+mv Игрушки_для_школьников Имя_Игрушки
+cd Имя_Игрушки
+ls
+cd ..
+mv Имя_Игрушки Игрушки
+ll
+cd Игрушки
+ll
+cd ..
+sudo snap install Skype
+snap connect discord:system-observe
+sudo snap connect discord:system-observe
+sudo snap install discord
+crontab
+cron -e
+crontab -e
+rm Игрушки
+rm -p Игрушки
+rm --hepl
+map rm
+rm -r Игрушки
+rm -r Игрушки_для_дошколят
+rm -r Игрушки_для_школьников
+crontab -e
+clear
+mkdir Игрушки_для_школьников
+mkdir Игрушки_для_дошколят
+cd Игрушки_для_школьников
+cat > Роботы
+cat > Конструкторы
+cat > Настольные игры
+cd ..
+cd Игрушки_для_дошколят
+cat > Мягкие игрушки
+cat > Куклы
+cat > Мягкие игрушки
+cat > Машинки
+cd ..
+rm -r Игрушки_для_школьников
+rm -r Игрушки_для_дошколят
+clear
+mkdir Игрушки_для_школьников
+mkdir Игрушки_для_дошколят
+cd Игрушки_для_школьников
+cat > Роботы
+cat > Конструкторы
+cat > Настольные игры
+clear
+rm -r Игрушки_для_школьников
+cd ..
+rm -r Игрушки_для_школьников
+rm -r Игрушки_для_дошколят
+clear
+mkdir Игрушки_для_школьников
+mkdir Игрушки_для_дошколят
+cd Игрушки_для_школьников
+cat > Роботы
+cat > Конструкторы
+cat > Настольные_игры
+cd ..
+cd Игрушки_для_дошколят
+cat > Мягкие_игрушки
+cat > Куклы
+cat > Машинки
+cd ..
+mkdir Имя_Игрушки
+mv Игрушки_для_школьников Имя_Игрушки
+mv Игрушки_для_дошколят Имя_Игрушки
+mv Имя_Игрушки Игрушки
+cd Игрушки
+ls -al
+sudo snap install discord
+sudo snap remove discord
+cd ..
+crontab -e
+chroot GB
+sudo su
+man unshare
+sudo su
+sudo unshare --net --pid --fork --mount-proc
+ll /bin
+ll /usr/bin
+cp /bin/unshare Homework1/bin
+sudo cp /bin/unshare Homework1/bin
+chroot Homework1
+sudo chroot Homework1
+ldd /bin/unshare
+cd Homework1
+unshared --net --pid --fork --mount-proc
+sudo unshare --net --pid --fork --mount-proc
+clear
+rm -r Homework1
+y
+clear
+mkdir Homework1
+sudo rm -r Homework1
+ll
+clear
+mkdir Homework1
+mkdir Homework1/bin Homework1/lib Homework1/lib64
+cp /bin/bash Homework1/bin
+cp /lib/x86_64-linux-gnu/libtinfo.so.6 Homework1/lib
+cp /lib/x86_64-linux-gnu/libc.so.6 Homework1/lib
+cp /lib64/ld-linux-x86-64.so.2 Homework1/lib64
+cd Homework1
+unshare –net –pid –fork –mount-proc
+sudo unshare –net –pid –fork –mount-proc
+sudo unshare --net --pid –fork –mount-proc
+sudo unshare --net --pid --fork –mount-proc
+sudo unshare --net --pid --fork --mount-proc
+sudo rm -r Homework1
+cd ..
+sudo rm -r Homework1
+ll
+clear
+mkdir Homework1
+mkdir Homework1/bin Homework1/lib Homework1/lib64
+cp /bin/bash Homework1/bin
+cp /lib/x86_64-linux-gnu/libtinfo.so.6 Homework1/lib
+cp /lib/x86_64-linux-gnu/libc.so.6 Homework1/lib
+cp /lib64/ld-linux-x86-64.so.2 Homework1/lib64
+cd Homework1
+unshare --net --pid --fork --mount-proc
+sudo unshare --net --pid --fork --mount-proc
+mkdir GB
+chroot GB/bin/bash
+chroot GB /bin/bash
+sudo
+ls
+sudo su
+apt-get upgrade
+su apt-get upgrade
+sudo apt-get upgrade~
+sudo apt-get upgrade
+sudo apt-get upgrade --fix-missing
+mkdir /sys/fs/cgroup/testgroup1
+sudo su
+sudo s
+sudo su
+docker run -it
+sudo snap install docker
+docker run -it
+ps - aux
+ps -aux
+docker run -it
+ps -aux
+docker run -it
+ps -aux
+docker run --hepl
+docker run --help
+docker run -it ubuntu:22.10 bash
+sudo su
+mkdir cowsay
+cowsaytest
+cowsay "test"
+sudo apt install cowsay
+cowsay "test"
+cd cowsaytest
+cd cowsay
+nano dockerFile
+docker build cowsay .
+docker build -t cowsay .
+ll
+docker build -t cowsay .
+rename
+rename dockerFile Dockerfile
+rename -v ‘s/dockerFile/Dockerfile/’ *
+docker build -t cowsay .
+ll
+docker build -t cowsay .
+cat Dockerfile
+nano Dockerfile
+docker build -t cowsay .
+sudo su
+sudo docker run -it trusting_nobel cowsay "HI"
+sudo su
+cd cowsaytest
+ll
+cd cowsay
+ll
+cat Dockerfile
+nano Dockerfile
+sudo su
+sudo docker image
+sudo docker ls
+docker ls
+docker images
+sudo su
+sudo docker run cowsaytestr cowsay "Hello"
+sudo docker run -it cowsaytestr bash
+sudo su
+docker run -it cowsaytestr bash
+sudo docker run -it cowsaytestr bash
+nano Dockerfile 
+sudo su
+clear
+docker rm -f $(docker ps -a -q)
+sudo su
+touch text.txt
+docker run -n some-mysql -e MY_SQL_ROOT_PASSWORD=1234 -d mysql:8.0.31
+docker run --name some-mysql -e MY_SQL_ROOT_PASSWORD=1234 -d mysql:8.0.31
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=1234 -d mysql:8.0.31
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=1234 -d mysql:8
+docker run --name mysql -h gb-linux -e MYSQL_ROOT_PASSWORD=1234 -d mysql:oracle
+docker ps
+init docker
+docker ps
+docker ps -a
+sudo su
+ip
+ip address
+sudo su
+ip a
+sudo su
+cd IC3
+mkdir IC3
+cd IC3
+cat README.md
+cat >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git config --global user.email "you@example.com"
+git config --global user.email "ilia2577@gmail.com"
+git config --global user.name "Mels"
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/GrafMels/Intermediate_certification_3.git
+git push -u origin main
+git remote add origin https://github.com/GrafMels/Intermediate_certification_3.git
+git push -u origin main
+clear
+cat >> pets.txt
+cat >> packAnimals.txt
+cat pets.txt packAnimals.txt > friendsOfMan.txt
+car friendsOfMan.txt
+cat friendsOfMan.txt
+cat friendsOfMan.txt >> friendsOfMans.txt
+cat friendsOfMans.txt
+clear
+git add .
+clear
+cd IC3
+git add .
+git commit -m "task1:Complite"
+git push
+git config credential.helper cache
+git push http://example.com/repo.git
+git push https://github.com/GrafMels/Intermediate_certification_3.git
+git push
+clear
+mkdir Directory
+mv friendsOfMans.txt /Directory
+sudo mv friendsOfMans.txt /Directory
+cd Directory
+ll
+cd ..
+ll
+cd Directory
+ll
+clear
+mv friendsOfMans.txt ./Directory
+ll
+cd ..
+mv friendsOfMans.txt ./Directory
+cd Directory
+ll
+clear
+mkdir Directory
+mv friendsOfMans.txt ./Directory
+cd ..
+ll
+cd~
+cd~Mels
+cd~Melsmels
+cd~mels
+exit
+mkdir Directory
+rm Directory
+rm -R Directory
+clear
+cd IC#
+cd IC3
+ll
+clear
+mkdir Directory
+mv friendsOfMans.txt ./Directory
+cd Diretory
+cd Directory
+ll
+cd ..
+git add .
+ll
+git commit -m "task2:Complite"
+pwd
+cd
+pwd
+clear
+sudo apt install mysql-server
+sudo mysql_secure_installation
+cd IC3
+sudo mysql
+apt-get update
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install mysql
+sudo apt install mysql-server
+sudo apt install autoremove
+sudo apt autoremove
+sudo apt install mysql-server
+clear
+sudo apt remove mysql-server
+sudo apt
+sudo apt fill-upgrade
+sudo apt full-upgrade
+screenfetch
+clear
+sudo apt install mysql-server
+git add .
+git commit -m "task3:Complite"
+git push
+git add .
+git commit -m "task3:Complite"
+clear
+sudo nano /etc/apt/sources.list
+sudo apt get update
+sudo apt-get update
+mynewsql
+apt install mynewsql
+sudo apt install mynewsql
+sudo nano /etc/apt/sources.list
+sudo apt-get update
+sudo apt install buster
+sudo nano /etc/apt/sources.list
+sudo apt-get update
+clear
+sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.17-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.17-1_all.deb
+sudo apt-get update
+sudo apt
+sudo apt full-upgrade
+sudo apt-get update
+sudo nano /etc/apt/sources.list
+sudo nano /etc/apt/sources.list.d/
+sudo apt-get update
+sudo dpkg -i mysql-apt-config_0.8.17-1_all.deb
+sudo apt-get install mysql-server
+sudo apt autoremove
+sudo remove mysql-server
+sudo apt remove mysql-server
+clear
+sudo dpkg -i mysql-apt-config_0.8.17-1_all.deb
+clear
+sudo nano /etc/apt/sources.list.d/
+clear
+sudo nano /etc/apt/sources.list
+sudo dpkg -i mysql-apt-config_0.8.17-1_all.deb
+sudo apt-get install mysql-server
+git add .
+git commit -m "f"
+git commit -m "task3:Complite"
+git reset
+git commit -m "task3:Complite"
+git add .
+git commit -m "task3:Complite"
+git push
+git add .
+git commit -m "task3:Complite"
+git reset HEAD~
+git add .
+git commit -m "task3:Complite"
+git push
+git pull
+git push
+git pull https://github.com/GrafMels/Intermediate_certification_3
+git push -f
+clear
+sudo dpkg -i 
+wget
+wget https://download.virtualbox.org/virtualbox/7.0.8/virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb
+sudo dpkg -i virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb 
+sudo dpkg -i virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb
+apt remove virtualbox
+sudo apt remove virtualbox
+sudo dpkg -i virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb
+apt purge virtualbox
+sudo apt purge virtualbox
+sudo cd /etc/apt/sources.list.d
+sudo /etc/apt/sources.list.d
+sudo su
+sudo dpkg -i virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb
+systemctl stop virtualbox
+dpkg -l | grep virtualbox*
+ii  virtualbox-6.1
+apt-get remove --purge virtualbox*
+sudo apt-get remove --purge virtualbox*
+sudo apt remove virtualbox*
+sudo rm ~/"VirtualBox VMs" -Rf
+sudo rm ~/.config/VirtualBox/ -Rf
+sudo apt-get install virtualbox
+sudo apt-get remove --purge virtualbox
+clear
+wget https://download.virtualbox.org/virtualbox/7.0.8/virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb
+sudo dpkg -i virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb
+sudo apt-get install virtualbox
+apt --fix-broken install
+sudo apt --fix-broken install
+clear
+wget https://download.virtualbox.org/virtualbox/7.0.8/virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb\
+clear
+wget https://download.virtualbox.org/virtualbox/7.0.8/virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb
+sudo dpkg -i virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb
+sudo dpkg -r virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb
+sudo dpkg -r virtualbox-7.0
+rm virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb.1
+ll
+history
+history 100
+history 300 -w history.txt
+history -w history.txt
+cd IC3
+history -w history.txt
+clear
+history -w history.txt
