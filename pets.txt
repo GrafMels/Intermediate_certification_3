@@ -1,0 +1,9 @@
+
+cat Murzik 3 Chartreux
+cat Pushistick 5 Foldex
+cat Barsik 2 Lykoi
+cat Murka 8 Manx
+hamster Vitya 5 Allocricetulus
+hamster Grigorii 3 Cricetus
+dog Pylia 5 Borzoi
+dog Malish 10 Beagle
