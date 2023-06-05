@@ -1,9 +1,11 @@
+package Class;
+
 /**
  * Command
  */
-class Command {
+public class Command {
     private String name = "";
-    
+
     public Command(String name) {
         this.name = name;
     }

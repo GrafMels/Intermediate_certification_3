@@ -1,3 +1,4 @@
+package MVC;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -6,12 +7,26 @@ import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+import Class.Animal;
+import Class.AnimalList;
+import Class.Camel;
+import Class.Cat;
+import Class.Command;
+import Class.CommandList;
+import Class.Dog;
+import Class.Donkey;
+import Class.Hamster;
+import Class.Horse;
+import Exceptions.EmptyField;
+import Exceptions.invalidInput;
+import Exceptions.NoRightInputElement;
+
 public class View {
     static private Scanner sc = new Scanner(System.in, "Cp866");
 
     public static Integer startMenu() {
         System.out.println(
-                "1: Показать список животных\n2: Показать список команд которым можно обучить животных\n3: Добавить новое животное\n4: Добавить новую команду\n\n0:Выход");
+                "1: Показать список животных\n2: Показать список команд которым можно обучить животных\n3: Добавить новое животное\n\n0:Выход");
         System.out.print("Выберите пункт и введите нужную цифру: ");
         int answer = sc.nextInt();
         return answer;
@@ -38,9 +53,8 @@ public class View {
         try (FileWriter fw = new FileWriter(file)) {
             fw.write(animallist.toPrint(commandlist));
         } catch (Exception e) {
-            // TODO: handle exception
+
         }
-        
 
         String[] commandString = commandlist.toString().split(",");
         String fullCommandString = "";
@@ -55,20 +69,40 @@ public class View {
         try (FileWriter fw = new FileWriter(file)) {
             fw.write(fullCommandString);
         } catch (Exception e) {
-            // TODO: handle exception
+
         }
     }
 
-    public static Animal newAnimal(CommandList fullCommandlist) {
+    /**
+     * @param fullCommandlist
+     * @return
+     * @throws EmptyField
+     * @throws NoRightInputElement
+     * @throws invalidInput
+     */
+    public static Animal newAnimal(CommandList fullCommandlist) throws EmptyField, NoRightInputElement, invalidInput {
         sc.nextLine();
 
         System.out.println("Введите имя животного: ");
         String name = sc.nextLine();
+        if (name.equals("")) {
+            return new Cat("", LocalDate.of(9999, 1, 1), new CommandList(), "Shroedinger`s cat", "");
+        }
 
         System.out.println("Введите дату рождения животного(в формате \"dd-mm-yyyy\"): ");
-        String[] date = sc.nextLine().split("-");
-        LocalDate birthDay = LocalDate.of(Integer.parseInt(date[2]), Integer.parseInt(date[1]),
-                Integer.parseInt(date[0]));
+        String dateString = sc.nextLine();
+        String[] date = "12-12-12".split("-");
+        LocalDate birthDay;
+        if (dateString.equals("")) {
+            return new Cat("", LocalDate.of(9999, 1, 1), new CommandList(), "Shroedinger`s cat", "");
+        }
+        try {
+            date = dateString.split("-");
+            birthDay = LocalDate.of(Integer.parseInt(date[2]), Integer.parseInt(date[1]),
+                    Integer.parseInt(date[0]));
+        } catch (ArrayIndexOutOfBoundsException e) {
+            throw new NoRightInputElement(2);
+        }
 
         String[] commandString = fullCommandlist.toString().split(",");
         String fullCommandString = "";
@@ -81,16 +115,22 @@ public class View {
         int condition = 0;
         LinkedList<Integer> commands = new LinkedList<Integer>();
         i = 0;
+        String conditionString = "";
         do {
             System.out.printf("Введите номера команд которые животное знает: \n%s : ", fullCommandString);
-            if (sc.hasNextInt()) {
-                condition = sc.nextInt();
-                if (condition != 0) {
-                    commands.add(condition);
+            conditionString = sc.nextLine();
+            if (!conditionString.equals("")) {
+                try {
+                    condition = Integer.parseInt(conditionString);
+                    if (condition != 0) {
+                        commands.add(condition);
+                    }
+                    i++;
+                } catch (Exception e) {
+                    throw new NoRightInputElement(3);
                 }
-                i++;
             }
-        } while (condition != 0);
+        } while (condition != 0 || conditionString.equals(""));
         CommandList commandlist = new CommandList();
         for (Integer command : commands) {
             Command newCommand = fullCommandlist.getCommand(command);
@@ -99,8 +139,14 @@ public class View {
 
         System.out.print("Введите вид животного(Цифрой): \n1.Cat\n2.Dog\n3.Hamster\n4.Donkey\n5.Horse\n6.Camel\n : ");
         int animalSpecies = 0;
-        if (sc.hasNextInt()) {
-            animalSpecies = sc.nextInt();
+        String animalSpeciesString = sc.nextLine();
+        if (animalSpeciesString.equals("")) {
+            return new Cat("", LocalDate.of(9999, 1, 1), new CommandList(), "Shroedinger`s cat", "");
+        }
+        try {
+            animalSpecies = Integer.parseInt(animalSpeciesString);
+        } catch (Exception e) {
+            throw new NoRightInputElement(4);
         }
 
         Animal newAnimal = new Camel();
@@ -117,8 +163,36 @@ public class View {
         } else if (animalSpecies == 6) {
             newAnimal = new Camel(name, birthDay, commandlist, "packAnimals", "Camel");
         } else {
-            // Сюда добавить исключение
+            throw new invalidInput();
         }
         return newAnimal;
+    }
+
+    public static int choiceAnimal() {
+        System.out.print("Выберите животное и введите нужную цифру: ");
+        int answer = sc.nextInt();
+        return answer;
+    }
+
+    public static int choiceWhatDoAnimal(Animal animal) {
+        System.out.println(
+                "1: Показать список команд\n2: Показать всю информацию о животном\n3: Добавить новую команду\n0:Выход");
+        System.out.print("Выберите пункт и введите нужную цифру: ");
+        int answer = sc.nextInt();
+        return answer;
+    }
+
+    public static int choiceComand(CommandList commandlist) {
+        System.out.println(commandlist.toVertikalString(commandlist));
+        System.out.println("Выберите пункт и введите нужную цифру: ");
+        int answer = sc.nextInt();
+        return answer - 1;
+    }
+
+    public static String newCommand() {
+        sc.nextLine();
+        System.out.println("Придумайте новую команду: ");
+        String answer = sc.nextLine();
+        return answer;
     }
 }

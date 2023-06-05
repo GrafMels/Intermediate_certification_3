@@ -1,14 +1,28 @@
+package MVC;
+
 import java.time.LocalDate;
+
+import Class.Animal;
+import Class.AnimalList;
+import Class.Camel;
+import Class.Cat;
+import Class.Command;
+import Class.CommandList;
+import Class.Dog;
+import Class.Donkey;
+import Class.Hamster;
+import Class.Horse;
 
 public class Model {
     public static AnimalList loadingFromAnimalList(CommandList fullCommandlist) {
         AnimalList animallist = new AnimalList();
         String allFile = View.loadingFromFile("AnimalList.txt");
-        String[] allLines = allFile.split(":"); 
+        String[] allLines = allFile.split(":");
         for (String line : allLines) {
             String[] oneLine = line.split(" ");
             String[] date = oneLine[1].split("-");
-            LocalDate birthDay = LocalDate.of(Integer.parseInt(date[2]), Integer.parseInt(date[1]), Integer.parseInt(date[0]));
+            LocalDate birthDay = LocalDate.of(Integer.parseInt(date[2]), Integer.parseInt(date[1]),
+                    Integer.parseInt(date[0]));
 
             String[] commands = oneLine[2].split(",");
             CommandList commandlist = new CommandList();
@@ -29,11 +43,10 @@ public class Model {
             } else if (oneLine[4].equals("Camel")) {
                 newAnimal = new Camel(oneLine[0], birthDay, commandlist, oneLine[3], oneLine[4]);
             } else {
-                //Сюда добавить исключение
+                // Сюда добавить исключение
             }
             animallist.addAnimal(newAnimal);
-             
-            
+
         }
         return animallist;
     }
@@ -47,5 +60,16 @@ public class Model {
             commandlist.addCommand(newCommand);
         }
         return commandlist;
+    }
+
+    public static CommandList newCommand(CommandList fullCommandlist, CommandList animalCommandlist) {
+        int commandIndex = View.choiceComand(fullCommandlist);
+        if (fullCommandlist.getList().size() <= commandIndex) {
+            String newCommand = View.newCommand();
+            fullCommandlist.addCommand(new Command(newCommand));
+        }
+        animalCommandlist.addCommand(fullCommandlist.getList().get(commandIndex));
+
+        return animalCommandlist;
     }
 }

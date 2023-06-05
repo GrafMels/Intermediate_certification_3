@@ -4,7 +4,10 @@ Stand
 Place
 Bark
 Come
-Heel 
+Heel
 Stay
 Stop
 Crawl
+Run
+Jump
+Go

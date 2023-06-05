@@ -1,3 +1,5 @@
+package Class;
+
 import java.util.LinkedList;
 
 public class CommandList {
@@ -31,7 +33,7 @@ public class CommandList {
             i++;
             if (i == commandList.size()) {
                 commandString = commandString + command;
-            }else{
+            } else {
                 commandString = commandString + command + ",";
             }
         }
@@ -46,15 +48,31 @@ public class CommandList {
                 if (fullCommandList.get(i) == commandList.get(j)) {
                     if (i == fullCommandList.size()) {
                         commandString = commandString + i;
-                    }else{
+                    } else {
                         commandString = commandString + i + ",";
                     }
                 }
             }
         }
-        
-        
+
         return commandString;
+    }
+
+    public String toVertikalString(CommandList commandlist) {
+        String[] commandString = commandlist.toString().split(",");
+        String fullCommandString = "";
+        for (int i = 0; i < commandString.length; i++) {
+            if (i == commandString.length - 1) {
+                int x = i + 1;
+                int y = i + 2;
+                fullCommandString = fullCommandString + x + "." + commandString[i] + "\n";
+                fullCommandString = fullCommandString + y + ".Добавить свою команду";
+            } else {
+                int x = i + 1;
+                fullCommandString = fullCommandString + x + "." + commandString[i] + "\n";
+            }
+        }
+        return fullCommandString;
     }
 
 }

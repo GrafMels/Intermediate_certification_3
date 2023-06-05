@@ -1,8 +1,10 @@
+package Class;
+
 import java.time.LocalDate;
 
-abstract class PackAnimal extends Animal{
+abstract class PackAnimal extends Animal {
     public PackAnimal(String name, LocalDate birthDay, CommandList commandList, String animalsType,
-    String animalSpecies) {
+            String animalSpecies) {
         super(name, birthDay, commandList, animalsType, animalSpecies);
     }
 

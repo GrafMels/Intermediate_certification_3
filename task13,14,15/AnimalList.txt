@@ -1,3 +1,0 @@
-Murka 12-12-2018 1,2,3,4, petsAnimal Cat
-Barbos 11-11-2011 2,4,5,6, petsAnimal Dog
-Honor 06-06-1999 2,3,5, packAnimals Camel
